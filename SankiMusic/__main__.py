@@ -24,7 +24,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("SankiMusic").error(
+        LOGGER("MassomMusic").error(
             "No Pyrogram String Defined !!..."
         )
         return
@@ -32,7 +32,7 @@ async def init():
         not config.SPOTIFY_CLIENT_ID
         and not config.SPOTIFY_CLIENT_SECRET
     ):
-        LOGGER("SankiMusic").warning(
+        LOGGER("MassomMusic").warning(
             "Spotify Queries Not Working Without Spotify ID & Secret."
         )
     try:
@@ -46,18 +46,18 @@ async def init():
         pass
     await bot.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("SankiMusic.plugins" + all_module)
-    LOGGER("SankiMusic.plugins").info(
+        importlib.import_module("massomMusic.plugins" + all_module)
+    LOGGER("MassomMusic.plugins").info(
         "Necessary Modules Imported Successfully."
     )
     await app.start()
     await Kaal.start()
     try:
         await Kaal.stream_call(
-            "https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4"
+            "https://telegra.ph/file/7681934ce83c7d752d682.mp4"
         )
     except NoActiveGroupCall:
-        LOGGER("SankiMusic").error(
+        LOGGER("MassomMusic").error(
             "[ERROR] - \n\nHey, At first Please Turn On VC in Your Logger Group."
         )
         sys.exit()
