@@ -101,11 +101,11 @@ if UPSTREAM_REPO:
         sys.exit()
 
 if PING_IMG_URL:
-    if PING_IMG_URL != "SankiMusic/resource/Ping.jpeg":
+    if PING_IMG_URL != "MassomMusic/resource/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://te.legra.ph/file/6abc32c3858f205434cd5.jpg"
+            PING_IMG_URL = "https://telegra.ph/file/3f3d741de0d22804dcb5d.jpg"
 
 if START_IMG_URL:
-    if START_IMG_URL != "SankiMusic/resource/Ping.jpeg":
+    if START_IMG_URL != "MassomMusic/resource/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://te.legra.ph/file/83cfcc36ef441e516d28f.jpg"
+            START_IMG_URL = "https://telegra.ph/file/7681934ce83c7d752d682.mp4"
